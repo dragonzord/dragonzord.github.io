@@ -1,0 +1,189 @@
+.nav {
+  height: 2.50em;
+  width: 100%;
+}
+
+.header {
+  padding: 0 5% 0 5%;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  float: right;
+}
+
+.figure {
+  height: 28em;
+  width: 100%;
+  clear: both;
+  border-radius: 3%;
+}
+
+#vancouver {
+  background-image: url("../Photos/pluie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.main {
+  height: 32em;
+  margin-bottom: -3em;
+  width: 100%;
+  position: relative;
+}
+
+.main div {
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -20%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7em;
+  line-height: 210%;
+  text-align: justify;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(32, 1fr)/ repeat(40, 1fr);
+  margin: 4em 2em 6em 2em;
+  grid-gap: 1.4em;
+}
+
+.grid div:hover {
+  opacity: 1;
+}
+
+.article1 {
+  grid-area: 1 / 1 / span 16 / span 20;
+  border-radius: 5%;
+  background-image: url("../Photos/Ukraine.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border: 0.7px lightgray solid;
+}
+
+.article2 {
+  grid-area: 1 / 24 / span 16 / span 20;
+  border-radius: 5%;
+  background-image: url("../Photos/Maladie.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border: 0.7px lightgray solid;
+}
+
+.article3 {
+  grid-area: 20 / 1 / span 16 / span 20;
+  border-radius: 5%;
+  background-image: url("../Photos/Fierte.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border: 0.7px lightgray solid;
+}
+
+.article4 {
+  grid-area: 20 / 24 / span 16 / span 20;
+  border-radius: 5%;
+  background-image: url("../Photos/Greenpeace.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border: 0.7px lightgray solid;
+}
+
+.story {
+  height: 100%;
+}
+
+.section2 {
+  width: 100%;
+  height: 12em;
+  border-top: 4px solid lightgray;
+}
+
+.section2 div {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+#mountain {
+  background-image: url("../Photos/mountain_view.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.social_media {
+  float: right;
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+.social_media li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 4em;
+}
+
+.footer {
+  width: 100%;
+  height: 6em;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 1025px) {
+  .figure {
+    height: 20em;
+  }
+  .main {
+    margin-bottom: -3em;
+  }
+  .main div {
+    font-size: 1.5em;
+  }
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(50, 1fr);
+    margin-bottom: 4em;
+  }
+  .article1 {
+    grid-row: 1/ span 12;
+    grid-column: 1 / span 1;
+  }
+  .article2 {
+    grid-row: 14/ span 12;
+    grid-column: 1 / span 1;
+  }
+  .article3 {
+    grid-row: 27/ span 12;
+    grid-column: 1 / span 1;
+  }
+  .article4 {
+    grid-row: 40/ span 12;
+    grid-column: 1 / span 1;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .figure {
+    height: 15em;
+  }
+  .main {
+    margin-bottom: -4em;
+  }
+  .main div {
+    font-size: 1.2em;
+  }
+}
