@@ -1,160 +1,114 @@
-.nav {
-  height: 2.50em;
-  width: 100%;
-}
-
-.header {
-  padding: 0 5% 0 5%;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  float: right;
-}
-
-.figure {
-  height: 28em;
-  width: 100%;
-  clear: both;
-  border-radius: 3%;
-}
-
-#vancouver {
-  background-image: url("../Photos/van_view.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-}
-
-.main {
-  height: 32em;
-  margin-bottom: -3em;
-  width: 100%;
-  position: relative;
-}
-
-.main div {
-  background-color: white;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -20%;
-  transform: translate(-50%, -50%);
-  font-size: 1.7em;
-  line-height: 210%;
-  text-align: justify;
+body {
+  background-color: #fcfcf7;
 }
 
 .grid {
   display: grid;
-  grid-template: repeat(16, 1fr)/ repeat(40, 1fr);
-  margin: 4em 2em 6em 2em;
-  grid-gap: 1.4em;
+  grid-gap: 1em;
 }
 
-.grid div:hover {
-  opacity: 1;
+/*.card {
+  border: 0.1em lightgray solid;
+}*/
+
+#card1 {
+  grid-area: 1 / 1 / span 20 / span 40;
 }
 
-.article1 {
-  grid-area: 1 / 1 / span 16 / span 20;
-  border-radius: 5%;
-  background-image: url("../Photos/web.png");
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  border: 0.7px lightgray solid;
+#card2 {
+  grid-area: 1 / 40 / span 20 / span 20;
 }
 
-.article2 {
-  grid-area: 1 / 24 / span 16 / span 20;
-  border-radius: 5%;
-  background-image: url("../Photos/tv.png");
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  border: 0.7px lightgray solid;
+#card3 {
+  grid-area: 21 / 1 / span 20 / span 40;
 }
 
-.story {
-  height: 100%;
+#card4 {
+  grid-area: 21 / 40 / span 20 / span 20;
 }
 
-.section2 {
-  width: 100%;
-  height: 12em;
-  border-top: 4px solid lightgray;
+#card5 {
+  grid-area: 41 / 1 / span 5 / span 40;
 }
 
-.section2 div {
-  font-size: 1.6em;
+#card6 {
+  grid-area: 41 / 40 / span 5 / span 20;
+}
+
+.subcard {
+  margin: 2em;
+  /*border: 0.1em lightgray dashed;*/
+}
+
+#subcard1, #subcard2, #subcard3 {
   text-align: center;
-  margin-top: 2.5em;
+  font-family: 'Kanit', "Arial", sans-serif;
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 
-#mountain {
-  background-image: url("../Photos/mountain_view.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
+#subcard1 img {
+  border-radius: 50%;
 }
 
-.social_media {
-  float: right;
-  font-size: 1.3em;
-  margin-top: 1em;
+#subcard4 {
+  height: 37.5em;
+  border: 0.1em #b2b3aa solid;
+  border-radius: 3%;
 }
 
-.social_media li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 4em;
+#subcard5 {
+  text-align: justify;
+  font-family: 'Kanit', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
 }
 
-.footer {
-  width: 100%;
-  height: 6em;
+#subcard6 {
+  text-align: center;
+  font-family: 'Kanit', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+#subcard7 {
+  text-align: left;
+  font-family: 'Kanit', "Arial", sans-serif;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+#javascript {
+  font-family: "Arial", sans-serif;
+  line-height: 1.8em;
+  text-align: center;
 }
 
 /*responsive*/
 
-@media only screen and (max-width: 1025px) {
-  .figure {
-    height: 20em;
-  }
-  .main {
-    margin-bottom: -3em;
-  }
-  .main div {
-    font-size: 1.5em;
-  }
-  .grid {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(24, 1fr);
-    margin-bottom: 4em;
-  }
-  .article1 {
-    grid-row: 1/ span 12;
-    grid-column: 1 / span 1;
-    margin-bottom: 2em;
-  }
-  .article2 {
-    grid-row: 14/ span 12;
-    grid-column: 1 / span 1;
+@media only screen and (min-width: 1500px) {
+  #subcard4, #subcard6 {
+    float: left;
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .figure {
-    height: 15em;
+@media only screen and (min-width: 730px) {
+  #twitter {
+    display: none;
   }
-  .main {
-    margin-bottom: -4em;
+}
+
+@media only screen and (max-width: 730px) {
+  #card2, #card5, #card6 {
+    display: none;
   }
-  .main div {
-    font-size: 1.2em;
+  #card4 {
+    grid-area: 41 / 1 / span 20 / span 40;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  #card1, #card2, #card3, #card4 {
+    grid-column: 1 / span 20;
   }
 }
