@@ -112,3 +112,9 @@ body {
     grid-column: 1 / span 20;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  #card1, #card2, #card3, #card4 {
+    grid-column: 1 / span 10;
+  }
+}
