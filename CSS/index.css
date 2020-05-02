@@ -87,7 +87,7 @@ body {
 /*responsive*/
 
 @media only screen and (min-width: 1500px) {
-  #subcard4, #subcard6 {
+  #subcard4, #subcard6, #subcard7 {
     float: left;
   }
 }
