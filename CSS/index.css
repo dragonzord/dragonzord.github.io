@@ -95,13 +95,13 @@ body {
   }
 }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 910px) {
   #twitter {
     display: none;
   }
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 910px) {
   #card2, #card5, #card6 {
     display: none;
   }
