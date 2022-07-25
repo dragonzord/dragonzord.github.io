@@ -89,6 +89,11 @@ body {
   }
 }
 
+@media only screen and (min-width: 920px) { 
+  #twitter {
+    display: none; 
+  } 
+}
 
 @media only screen and (max-width: 920px) {
   #card2, #card5, #card6 {
