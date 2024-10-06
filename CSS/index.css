@@ -40,7 +40,7 @@ body {
   /*border: 0.1em lightgray dashed;*/
 }
 
-#subcard1, #subcard2, #subcard3 #subcard4 {
+#subcard1, #subcard2, #subcard3, #subcard4 {
   text-align: center;
   font-family: 'Kanit', "Arial", sans-serif;
   line-height: 1.5em;
