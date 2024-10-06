@@ -52,9 +52,9 @@ body {
 }
 
 #subcard4 {
-  height: 37.5em;
-  border: 0.1em #b2b3aa solid;
-  border-radius: 3%;
+  font-family: 'Kanit', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
 }
 
 #subcard5 {
